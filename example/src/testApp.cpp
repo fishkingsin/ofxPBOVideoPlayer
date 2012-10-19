@@ -3,7 +3,13 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofDisableTextureEdgeHack();
-	video.load("output.avi",true);
+    ofDirectory dir;
+    dir.allowExt("mp4");
+    dir.allowExt("avi");
+    dir.allowExt("mov");
+    dir.allowExt("m4v");
+    dir.listDir("/");
+	video.load(dir.getPath(0),true);
 	video.play();
 	ofBackground(0);
 	ofSetVerticalSync(true);

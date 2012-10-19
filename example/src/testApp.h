@@ -26,4 +26,5 @@ class testApp : public ofBaseApp{
 	ofxParameter<int> x,y,z;
 	//ofFbo fbo;
 	ofxPBOVideoPlayer video;
+    ofPixels pixels[180];
 };
