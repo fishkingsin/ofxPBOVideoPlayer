@@ -8,8 +8,8 @@ void testApp::setup(){
     dir.allowExt("avi");
     dir.allowExt("mov");
     dir.allowExt("m4v");
-    dir.listDir("/");
-	video.load(dir.getPath(0),true);
+    dir.listDir("/Volumes/data_RAID/Downloads/Videos/test");
+	video.load(dir.getPath(int(ofRandom(dir.getFiles().size()))),true);
 	video.play();
 	ofBackground(0);
 	ofSetVerticalSync(true);
@@ -64,12 +64,18 @@ ofDrawBitmapString(ofToString(vfps),20,40);
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+	ofDirectory dir;
+    dir.allowExt("mp4");
+    dir.allowExt("avi");
+    dir.allowExt("mov");
+    dir.allowExt("m4v");
+    dir.listDir("/Volumes/data_RAID/Downloads/Videos/test");
+	video.load(dir.getPath(int(ofRandom(dir.getFiles().size()))),true);
 }
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-
+	
 }
 
 //--------------------------------------------------------------
@@ -79,7 +85,8 @@ void testApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-
+	float speed = (x-ofGetWidth()*0.5)/(ofGetWidth()*0.5);
+	video.player.setSpeed(speed);
 }
 
 //--------------------------------------------------------------

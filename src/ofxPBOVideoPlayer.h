@@ -20,12 +20,12 @@ public:
 	void draw();
 
 	bool isFrameNew();
+	ofVideoPlayer player;
 
 private:
 	void newFrame(ofPixels & pixels);
 
-	ofVideoPlayer player;
-	ofPBO pbo;
+		ofPBO pbo;
 	ofTexture tex;
 	ofFbo fbo;
 	bool usePBO;

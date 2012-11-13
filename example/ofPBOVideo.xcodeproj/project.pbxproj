@@ -18,6 +18,9 @@
 		1B01900F162BB5A300AC67B4 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B01900A162BB5A300AC67B4 /* ofxXmlSettings.cpp */; };
 		1B019017162BB74F00AC67B4 /* ofPBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B019013162BB74F00AC67B4 /* ofPBO.cpp */; };
 		1B019018162BB74F00AC67B4 /* ofxPBOVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B019015162BB74F00AC67B4 /* ofxPBOVideoPlayer.cpp */; };
+		1B83942B16522E22004FFA9C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B83942A16522E22004FFA9C /* CoreVideo.framework */; };
+		1B83942D16522E28004FFA9C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B83942C16522E28004FFA9C /* QTKit.framework */; };
+		1B83942F16522E36004FFA9C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B83942E16522E36004FFA9C /* Accelerate.framework */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -91,6 +94,9 @@
 		1B019014162BB74F00AC67B4 /* ofPBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofPBO.h; sourceTree = "<group>"; };
 		1B019015162BB74F00AC67B4 /* ofxPBOVideoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPBOVideoPlayer.cpp; sourceTree = "<group>"; };
 		1B019016162BB74F00AC67B4 /* ofxPBOVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPBOVideoPlayer.h; sourceTree = "<group>"; };
+		1B83942A16522E22004FFA9C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../../../../../../../System/Library/Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
+		1B83942C16522E28004FFA9C /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = ../../../../../../../System/Library/Frameworks/QTKit.framework; sourceTree = "<group>"; };
+		1B83942E16522E36004FFA9C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../../../System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -133,6 +139,9 @@
 				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				1B83942B16522E22004FFA9C /* CoreVideo.framework in Frameworks */,
+				1B83942D16522E28004FFA9C /* QTKit.framework in Frameworks */,
+				1B83942F16522E36004FFA9C /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,9 @@
 		BBAB23C913894ECA00AA2426 /* system frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B83942E16522E36004FFA9C /* Accelerate.framework */,
+				1B83942C16522E28004FFA9C /* QTKit.framework */,
+				1B83942A16522E22004FFA9C /* CoreVideo.framework */,
 				E4C2424410CC5A17004149E2 /* AppKit.framework */,
 				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
 				E4C2424610CC5A17004149E2 /* IOKit.framework */,
